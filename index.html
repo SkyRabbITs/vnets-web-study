@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- NAV -->
+    
+    <nav>  <!-- 네비게이션이라는 곳을 뜻함  -->
+      <div class="navBox">
+        <div class="left">
+          <a href="#home">아이디</a> <!--  -->
+        </div>
+        <div class="right">
+          <a href="#home">Home</a> <!--  -->
+          <a href="#skills">Skills</a> <!--  -->
+          <a href="#contact">Contact</a> <!--  -->
+        </div>
+      </div>
+    </nav>
+
+    <!-- HOME -->
+    <header id="home" class="container"> <!--  -->
+      <div class="idCard">
+        <!-- 이미지박스 -->
+        <div class="imgContainer">
+          <img src="https://http.cat/404.jpg" alt="" class="profileImg" /> <!--  -->
+        </div>
+        <!-- 인삿말 -->
+        <div class="greetingBox">
+          <p class="greeting">
+            Hello,<br />
+            I'm SkyRabbITs. <!--  -->
+          </p>
+          <p class="introduce">소개글</p>
+        </div>
+        <!-- 컨택버튼 -->
+        <div class="contactBox">
+          <a href="#contact" class="contactBtn">CONTACT ME</a>
+        </div>
+      </div>
+    </header>
+
+
+      <!-- SKILLS -->
+      <div id="skills" class="container skills"> <!--  -->
+        <div class="title">
+          <h1>Skills</h1>
+          <div class="lvBox">
+            <span class="allBtn">All</span> <!--  -->
+            <span class="babyBtn">Baby</span> <!--  -->
+            <span class="userBtn">User</span> <!--  -->
+            <span class="expertBtn">Expert</span> <!--  -->
+          </div>
+        </div>
+
+        <div class="skills-body">
+          <div class="skillsBox frontEnd">
+            <h2>Front-End</h2>
+            <div class="skillsContent user">
+              <i class="fab fa-html5 fa-5x" style="color: #e34c26"></i>
+              <p class="skillName">HTML5</p>
+            </div>
+
+            <div class="skillsContent user">
+              <i class="fab fa-css3 fa-5x" style="color: #264de4"></i>
+              <p class="skillName">CSS3</p>
+            </div>
+          </div>
+
+          <div class="skillsBox backEnd">
+            <h2>Back-End</h2>
+            <div class="skillsContent user">
+              <i class="fab fa-js fa-5x" style="color: #f0db4f"></i>
+              <p class="skillName">Javascript</p>
+            </div>
+
+            <div class="skillsContent baby">
+              <img src="img/icon-python.png" alt="" style="height: 6em" />
+              <p class="skillName">Python</p>
+            </div>
+          </div>
+
+          <div class="skillsBox versionCt">
+            <h2>Version Control</h2>
+            <div class="skillsContent user">
+              <i class="fab fa-github fa-5x"></i>
+              <p class="skillName">Github</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTACT -->
+      <article id="contact" class="container contact"> <!--  -->
+        <div class="title">
+          <h1>Contact</h1>
+        </div>
+        <div class="contact-body">
+          <p>원하는 멘트</p>
+          <p>영어 번역</p>
+
+          <div class="formBox">
+            <form id="myForm">
+              <p>
+                <input
+                  id="ct_name"
+                  class="input name"
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                />
+              </p>
+              <p>
+                <textarea
+                  id="ct_description"
+                  class="input textarea"
+                  name="description"
+                  placeholder="Message"
+                ></textarea>
+              </p>
+              <p><input type="submit" value="Send message" /></p>
+            </form>
+          </div>
+        </div>
+        <div>
+          <div class="contactList"></div>
+        </div>
+      </article>
+    </section>
+
+    <footer> <!--  -->
+      <div class="footerBox">
+        <div class="snsBox email">
+          <div class="snsLogo">
+            <i class="fas fa-envelope-square fa-3x"></i>
+          </div>
+        </div>
+
+        <div class="snsBox instagram" href="www.naver.com">
+          <div class="snsLogo">
+            <i class="fab fa-instagram fa-3x"></i>
+          </div>
+        </div>
+
+        <div class="snsBox facebook">
+          <div class="snsLogo">
+            <i class="fab fa-facebook-square fa-3x"></i>
+          </div>
+        </div>
+
+        <div class="snsBox github">
+          <div class="snsLogo">
+            <i class="fab fa-github-square fa-3x"></i>
+          </div>
+        </div>
+
+        <div class="snsBox tistory">
+          <div class="snsLogo">
+            <i class="fab fa-blogger fa-3x"></i>
+          </div>
+        </div>
+        <p>@아이디 _ WEB PORTFOLIO</p>
+      </div>
+    </footer>
+    <script src="js/skillLv.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>
