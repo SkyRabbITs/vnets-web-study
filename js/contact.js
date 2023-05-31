@@ -12,8 +12,8 @@ function getContactList() {
   }
 }
 
-function saveContactList(contactList) {
-  const contactList = JSON.stringify(contactList);
+function saveContactList(contactList1) {
+  const contactList = JSON.stringify(contactList1);
   localStorage.setItem("contactList", contactList);
 }
 
